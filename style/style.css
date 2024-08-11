@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Miama";
+  src: local("Miama Regular"), url("/assets/fonts/Miama.otf");
+  font-weight: 400;
+}
