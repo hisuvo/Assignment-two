@@ -185,6 +185,8 @@ section {
 
 .description {
   color: var(--clr-neutral-200);
+  letter-spacing: 0.01875rem;
+  line-height: 1.5rem;
 }
 
 
@@ -256,6 +258,60 @@ section {
 
 /* run related style end */
 
+/* Trainings and Exercises related style start  */
+.exercises .exercises_content{
+  max-width: 41.9375rem;
+}
+
+.exercises_gallery{
+  margin-block-start: 3.625rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.exercises_gallery .gallery_item{
+  position: relative;
+}
+
+.exercises_gallery{
+  & .one{
+    grid-column: 1 / 4;
+  }
+  & .two{
+    grid-column: 4 / 10;
+  }
+  & .three{
+    grid-column: 10 / -1;
+  }
+  & .four{
+    grid-column: 1 / 6;
+  }
+  & .five{
+    grid-column: 6 / 9;
+  }
+  & .six{
+    grid-column: 9 / -1;
+  }
+}
+
+.gallery_item img{
+  height: 100%;
+}
+
+.gallery_item .gallery_text{
+  position: absolute;
+  font-size: clamp(0.3rem, 4vw, 0.8rem);
+  left: 1rem;
+  bottom: 1.5rem;
+  background-color: #0035;
+  padding:0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 0.3px solid #FFF6;
+  box-shadow: 0 0 1rem 0 #0003;
+}
+
+/* Trainings and Exercises related style end  */
+
 
 
 /* --------------------- */
@@ -265,6 +321,10 @@ section {
 /* Tablate responsive style */
 
 @media screen and (min-width: 576px) and (max-width: 992px){
+  .container {
+    width: 85%;
+  }
+
   /* change habits style */
   .change-habits .change-habits-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -279,12 +339,20 @@ section {
     background-size: 550%;
   }
 
+  /* Exercises related style */
+  .gallery_item .gallery_text{
+    font-size: 0.7rem;
+  }
+
 }
 
 
 /* Mobile responsive style */
 
 @media screen and (max-width: 576px){
+  .container {
+    width: 90%;
+  }
 
   /* button style */
   .btn-primary{
@@ -305,9 +373,16 @@ section {
   .run .run-content{
     width: 100%;
   }
-
   .run .run-image{
     width: 100%;
+  }
+
+  /* Trainings and Exercises related style */
+  .exercises_gallery{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery_item .gallery_text{
+    font-size: 0.7rem;
   }
 
 }
