@@ -87,6 +87,7 @@ button {
   --fw-900: 900;
   --fw-800: 800;
   --fw-700: 700;
+  --fw-600: 600;
   --fw-500: 500;
   --fw-400: 400;
 }
@@ -157,6 +158,19 @@ body {
   margin: 0 auto;
 }
 
+.btn-primary{
+  border: none;
+  outline:none;
+  cursor: pointer;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  border-radius: 2.625rem;
+  padding: 1rem 4.46875rem;
+  margin-block-start: 2.375rem;
+}
+
 section {
   margin-block-end: 5.625rem;
 }
@@ -217,6 +231,32 @@ section {
 
 /* change-habit related style end */
 
+/* run related style start */
+.run .container {
+  border-radius: 18px;
+  background: var(--clr-dark-200);
+  padding: 2rem;
+  gap: 10.3125rem;
+  justify-content: space-between;
+}
+
+.run .run-content {
+  width: 50%;
+}
+
+.run .run-image {
+  width: 35%;
+  height: 312px;
+  border-radius: 18px;
+  background-image: url(../assets/images/run.jpg);
+  background-position: 70% 30%;
+  background-size: 320%;
+  background-repeat: no-repeat;
+}
+
+/* run related style end */
+
+
 
 /* --------------------- */
 /* Responsive part start */
@@ -229,15 +269,45 @@ section {
   .change-habits .change-habits-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* run related style */
+  .run .container {
+      gap: 4.25rem;
+    }
+  .run .run-image {
+    background-position: 67% 26%;
+    background-size: 550%;
+  }
+
 }
 
 
 /* Mobile responsive style */
 
 @media screen and (max-width: 576px){
+
+  /* button style */
+  .btn-primary{
+    padding: 1rem 0;
+    width: 100%;
+  }
+
  /* change habits style */
  .change-habits .change-habits-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* run related style */
+  .run .container {
+      gap: 1.94rem;
+      flex-direction: column;
+  }
+  .run .run-content{
+    width: 100%;
+  }
+
+  .run .run-image{
+    width: 100%;
   }
 
 }
