@@ -155,6 +155,74 @@
           </div>
         </div>
        </section>
+
+       <!-- BMI Calculator section -->
+        <section>
+          <div class="bmi-calculator--content">
+            <h2 class="section-title">BMI Calculator</h2>
+            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+          </div>
+        </section>
+
+        <!-- BMI Chart And Form section -->
+         <section class="bmi_chart_form">
+          <div class="container flx">
+            <div class="bmi_chart">
+              <h3 class="bmi_chart--title">BMI Calculator Chart</h3>
+              <table class="bmi_chart--table">
+                <tr>
+                  <th class="chart_header">BMI</th>
+                  <th class="chart_header">Weight Status</th>
+                </tr>
+                <tr>
+                  <td class="chart_data">Below 18.5</td>
+                  <td class="chart_data">Underweight</td>
+                </tr>
+                <tr>
+                  <td class="chart_data">18.5 - 24.9</td>
+                  <td class="chart_data">Healthy</td>
+                </tr>
+                <tr>
+                  <td class="chart_data">25.0 - 29.9</td>
+                  <td class="chart_data">Overweight</td>
+                </tr>
+                <tr>
+                  <td class="chart_data">30.0 - and Above</td>
+                  <td class="chart_data">Obese</td>
+                </tr>
+              </table>
+            </div>
+            <div class="bmi_form">
+              <h3 class="bmi_form--title">Calculate your BMI</h3>
+              <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+              <table class="bmi_form--table">
+                <tr class="bmi_form--row">
+                  <td class="form_data">
+                    <input type="text" placeholder="Height/cm">
+                  </td>
+                  <td class="form_data">
+                    <input type="text" placeholder="weight/kg">
+                  </td>
+                </tr>
+                <tr class="bmi_form--row">
+                  <td class="form_data">
+                    <input type="text" placeholder="Age">
+                  </td>
+                  <td class="form_data">
+                    <select name="sex" id="sex">
+                      <option value="sex">Sex</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <select name="factor" id="factor">
+                <option value="factor">Select an activity factor</option>
+              </select>
+              <p><button class="btn-primary">Calculate</button></p>
+            </div>
+          </div>
+         </section>
+
     </main>
     <footer></footer>
   </body>

@@ -37,6 +37,7 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+table,
 ul,
 ol {
   list-style: none;
@@ -313,6 +314,93 @@ section {
 /* Trainings and Exercises related style end  */
 
 
+/* BMI Calculator related style start */
+
+.bmi-calculator--content{
+  max-width: 671px;
+  margin: 0 auto;
+}
+
+
+/* BMI Chart And Form related style start */
+
+.bmi_chart_form{
+  background-color: var(--clr-dark-200);
+  padding-block: 3.25rem;
+}
+
+.bmi_chart_form .flx{
+  justify-content: space-between;
+}
+
+.bmi_chart--title,
+.bmi_form--title {
+  font-size: var(--fs-600);
+}
+
+.bmi_chart--table{
+  margin-block-start: 3.25rem;
+}
+
+.bmi_chart .bmi_chart--table,
+.chart_header,
+.chart_data{
+  border-collapse: collapse;
+  border: 1px solid var(--clr-neutral-200);
+  padding: 1rem 2rem;
+  text-align: left;
+  line-height: 1.2;
+  font-size: var(--fs-400);
+}
+
+.bmi_chart .bmi_chart--table .chart_data{
+  color: var(--clr-neutral-200);
+  font-size: 14px;
+}
+
+.bmi_form{
+  max-width: 30rem;
+}
+
+.bmi_form .description{
+  padding: 0.9rem 0 2.1rem;
+}
+
+.bmi_form--table{
+  width: 100%;
+}
+.bmi_form--table .bmi_form--row > * + *{
+  padding-left: 1rem;
+}
+
+.bmi_form .bmi_form--table, .form_data{
+  padding:0.4rem 0;
+}
+
+
+.bmi_form input[type="text"],select{
+  padding: 1rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--clr-neutral-200);
+}
+
+.bmi_form input[type="text"]::placeholder{
+  color: var(--clr-neutral-200);
+}
+
+.bmi_form .form_data .fector{
+  width: 100%;
+  padding: 2rem;
+}
+
+/* BMI Chart And Form related style end */
+
+
 
 /* --------------------- */
 /* Responsive part start */
@@ -342,6 +430,15 @@ section {
   /* Exercises related style */
   .gallery_item .gallery_text{
     font-size: 0.7rem;
+  }
+
+  /* BMI Chart And Form related style start */
+  .bmi_chart_form .flx{
+    flex-direction: column;
+    gap: 3.875rem;
+  }
+  .bmi_form{
+    max-width: 100%;
   }
 
 }
@@ -383,6 +480,15 @@ section {
   }
   .gallery_item .gallery_text{
     font-size: 0.7rem;
+  }
+
+  /* BMI Chart And Form related style start */
+  .bmi_chart_form .flx{
+    flex-direction: column;
+    gap: 2.625rem;
+  }
+  .bmi_form{
+    max-width: 100%;
   }
 
 }
