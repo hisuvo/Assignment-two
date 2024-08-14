@@ -266,7 +266,7 @@ nav {
   align-items: center;
 }
 
-.banner_content .banner_title, p{
+.banner_content .banner_title, .banner_desctipt{
   max-width: 32.5rem;
 }
 
@@ -539,6 +539,15 @@ nav {
   position: relative;
 }
 
+.team_gallery--item picture::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark-100);
+  opacity: 0.2;
+}
+
 .team_gallery--item img{
   border-radius: 1.2rem;
   width: 100%;
@@ -554,6 +563,8 @@ nav {
 .trainer_title h4{
   font-size: clamp(0.875rem, 4vw, 1.25rem);
 }
+
+
 /* Team related style end */
 
 
@@ -681,8 +692,6 @@ footer{
   .banner_img .description{
     font-size: 9px;
   }
-
-
 
   /* change habits style */
   .change-habits-cards {
