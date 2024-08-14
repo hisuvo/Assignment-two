@@ -191,6 +191,63 @@ section {
 }
 
 
+/* --------------------- */
+/* header related style  */
+/* -------------------- */
+
+header{
+height: 715px;
+background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+#hembarg-menu {
+  display: none;
+}
+
+nav {
+  margin: 0 auto;
+  padding: 2rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: var(--clr-accent-400);
+  font-size: 2.375rem;
+  font-style: italic;
+}
+
+.nav-items {
+  gap: 2.9375rem;
+  border: 1px solid hsl(from var(--clr-neutral-100) h s l / 0.1);
+  border-radius: 2.4375rem;
+  padding: 0.25rem;
+}
+
+.nav-items .nav-item {
+  & .nav-link {
+    padding: 0.5rem 1.125rem;
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-500);
+    border-radius: 50px;
+    display: inline-block;
+  }
+  & .active {
+    background-color: var(--clr-accent-400);
+  }
+
+  & .nav-link:hover {
+    background-color: var(--clr-accent-400);
+  }
+}
+
+
+/* Banner Related style */
+
+
+
+
+
 /* ------------------ */
 /* main related style */
 /* ----------------- */
@@ -512,6 +569,15 @@ footer{
     width: 85%;
   }
 
+  /* nav related style */
+  .nav-items {
+    gap: 1.25rem;
+  }
+
+.nav-link {
+  font-size: var(--fs-400);
+ }
+
   /* change habits style */
   .change-habits-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -556,9 +622,22 @@ footer{
 /* Mobile responsive style */
 
 @media screen and (max-width: 576px){
+
   .container {
     width: 90%;
   }
+
+  /* nav related style  */
+
+  #hembarg-menu {
+    display: block;
+    font-size: 2.375rem;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
 
   /* button style */
   .btn-primary{
