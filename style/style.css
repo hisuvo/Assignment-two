@@ -564,8 +564,75 @@ nav {
   font-size: clamp(0.875rem, 4vw, 1.25rem);
 }
 
-
 /* Team related style end */
+
+/* Price related style start */
+.price .Price_section-title{
+  font-size: var(--fs-800);
+  font-weight: var(--fw-800);
+  line-height: 1.2;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.price .flx{
+  gap: 2rem;
+}
+
+.price_card{
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--clr-dark-200);
+  padding: 2.4rem;
+  margin: 4rem 0;
+}
+
+.show{
+  background-color: var(--clr-accent-400);
+  transform: scale(1.155);
+}
+
+#show_btn{
+  color: var(--clr-accent-400);
+}
+
+.price_plan--title{
+  text-transform: uppercase;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  letter-spacing: 0.125rem;
+}
+
+.plane_info--items> * + *{
+  margin-top: 0.8rem;
+}
+
+.plane_info--item{
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+}
+
+.plane_see_more{
+  font-size: 13px;
+}
+
+.plane_link:hover{
+  text-decoration: underline;
+  color: var(--clr-neutral-200);
+}
+
+.plane_btn{
+  width: 100%;
+  padding: 1.3rem;
+  font-weight: var(--fw-700);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Price related style end */
 
 
 /* -------------------- */
@@ -727,6 +794,12 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Price related style */
+  .price_card{
+    gap: 1rem;
+    padding: 1.4rem;
+  }
+
   /* footer related style */
   .footer_content{
     flex-direction: column;
@@ -794,11 +867,11 @@ footer{
     font-size: 9px;
   }
 
-
   /* button style */
-  .btn-primary{
-    padding: 1rem 0;
-    width: 100%;
+  .btn-primary,.btn-secondary{
+    padding: 1rem;
+    max-width: 169;
+    width: 100;
   }
 
  /* change habits style */
@@ -843,6 +916,18 @@ footer{
     bottom: 0.3rem;
     left: 0.5rem;
   }
+  /* price related style */
+  .price .flx{
+    flex-direction: column;
+  }
+
+  .price_card{
+    margin: 0;
+  }
+
+  .show{
+    transform: scale(1);
+    }
 
   /* footer related style */
   .footer_content, .footer_content--nav{
