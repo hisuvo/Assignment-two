@@ -616,6 +616,8 @@ footer{
   color: var(--clr-neutral-200);
   font-size: 1.25rem;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
 }
 
 
