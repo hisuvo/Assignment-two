@@ -571,7 +571,7 @@ nav {
   font-size: var(--fs-800);
   font-weight: var(--fw-800);
   line-height: 1.2;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
@@ -927,7 +927,11 @@ footer{
 
   .show{
     transform: scale(1);
-    }
+  }
+  
+  .price .Price_section-title{
+    padding-bottom: 2rem;
+  }
 
   /* footer related style */
   .footer_content, .footer_content--nav{
