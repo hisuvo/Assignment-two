@@ -104,16 +104,16 @@ button {
 
 .grid {
   display: grid;
-  align-items: center;
+  place-items: center;
 }
 
 /* font color style */
-.clr-light {
+/* .clr-light {
   color: var(--clr-neutral-100);
 }
 .clr-gray {
   color: var(--clr-neutral-200);
-}
+} */
 
 /* font family style */
 
@@ -125,16 +125,16 @@ button {
 /* font-size style  */
 
 .fs-title {
-  font-size: var(--fs-800);
+  font-size: var(--fs-900);
 }
 
 /* font-weight style */
-.fw-800 {
+/* .fw-800 {
   font-weight: var(--fw-800);
 }
 .fw-700 {
   font-weight: var(--fw-700);
-}
+} */
 
 .txt-aln {
   text-align: center;
@@ -159,7 +159,7 @@ body {
   margin: 0 auto;
 }
 
-.btn-primary{
+.btn-primary, .btn-secondary{
   border: none;
   outline:none;
   cursor: pointer;
@@ -168,8 +168,15 @@ body {
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-100);
   border-radius: 2.625rem;
-  padding: 1rem 4.46875rem;
+  padding: 1rem 3.46875rem;
   margin-block-start: 2.375rem;
+}
+
+.btn-secondary{
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background-color: transparent;
 }
 
 section {
@@ -196,7 +203,6 @@ section {
 /* -------------------- */
 
 header{
-height: 715px;
 background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 
@@ -244,9 +250,64 @@ nav {
 
 /* Banner Related style */
 
+.banner{
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
 
+#circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--clr-accent-400);
+}
 
+.banner .container{
+  justify-content: space-between;
+  align-items: center;
+}
 
+.banner_content .banner_title, p{
+  max-width: 32.5rem;
+}
+
+.banner_content{
+  width: 55%;
+}
+
+.banner_img{
+  position: relative;
+  width: 35%;
+}
+
+.banner_video_tutorial--card,
+.banner_free_video--card {
+  position: absolute;
+  width: 206px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 2rem 1rem;
+}
+
+.banner_video_tutorial--card{
+  left: -7rem;
+  bottom: 2rem;
+}
+
+.banner_free_video--card{
+  left: 15rem;
+  top: 7rem;
+}
+
+.video_viewer_number{
+  font-size: 1.5rem;
+}
+
+.free_video_viewer_number{
+  font-size: 40px;
+}
 
 /* ------------------ */
 /* main related style */
@@ -574,9 +635,52 @@ footer{
     gap: 1.25rem;
   }
 
-.nav-link {
-  font-size: var(--fs-400);
- }
+  .nav-link {
+    font-size: var(--fs-400);
+  }
+
+  /* Banner related style */
+
+   .banner .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .banner_content,
+  .banner_img{
+    width: 100%;
+  }
+
+  .banner_video_tutorial--card,
+  .banner_free_video--card {
+    width: 155px;
+    padding: 1rem;
+  }
+
+  .banner_video_tutorial--card{
+    left: 10rem;
+    bottom: 10rem;
+  }
+  
+  .banner_free_video--card{
+    left: 20rem;
+    top: 2rem;
+  }
+
+  .free_video_viewer_number{
+    font-size: 30px;
+  }
+
+  .video_viewer_number{
+    font-size: 18px;
+  }
+
+  .banner_img .description{
+    font-size: 9px;
+  }
+
+
 
   /* change habits style */
   .change-habits-cards {
@@ -636,6 +740,47 @@ footer{
 
   .nav-items {
     display: none;
+  }
+
+  /* Banner related style */
+
+  .banner .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .banner_content,
+  .banner_img{
+    width: 100%;
+  }
+
+  .banner_video_tutorial--card,
+  .banner_free_video--card {
+    width: 155px;
+    padding: 1rem;
+  }
+
+  .banner_video_tutorial--card{
+    left: 6rem;
+    bottom: 15rem;
+  }
+  
+  .banner_free_video--card{
+    left: 17rem;
+    top: -1rem;
+  }
+
+  .free_video_viewer_number{
+    font-size: 30px;
+  }
+
+  .video_viewer_number{
+    font-size: 18px;
+  }
+
+  .banner_img .description{
+    font-size: 9px;
   }
 
 
