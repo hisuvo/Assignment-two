@@ -191,9 +191,9 @@ section {
 }
 
 
-/* ---------- */
-/* main style */
-/* ---------- */
+/* ------------------ */
+/* main related style */
+/* ----------------- */
 
 /* change-habit related style start */
 .change-habits .section-text {
@@ -436,8 +436,70 @@ section {
 .trainer_title h4{
   font-size: clamp(0.875rem, 4vw, 1.25rem);
 }
-
 /* Team related style end */
+
+
+/* -------------------- */
+/* footer related style */
+/* ------------------- */
+footer{
+  background-color: var(--clr-dark-200);
+  --footer_logo--fs: 4.375rem;
+  --footer_nav--fs: 1.4375rem;
+}
+
+.footer_content{
+  padding: 3rem 0;
+  justify-content: space-between;
+}
+
+.footer_content--logo{
+  max-width: 27.6875rem;
+}
+
+.footer_content--logo .footer_logo{
+  font-size: var(--footer_logo--fs);
+  font-style:italic;
+  color: var(--clr-accent-400);
+  margin-block-end: 1.25rem;
+}
+
+.footer_content--logo .description{
+  margin-block-end: 1.25rem;
+}
+
+.footer_content--nav{
+  max-width: 32.125rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer_nav--header{
+  font-size: var(--fs-700);
+  margin-block-end: 2.4375rem;
+}
+
+.footer_nav .flx{
+  flex-direction: column;
+  --gap: 1.25rem;
+}
+
+.footer_nav--item{
+  color: var(--clr-neutral-200);
+  font-size: var(--footer_nav--fs);
+}
+
+.footer_hr{
+  border: 1px solid var(--clr-neutral-200);
+}
+
+.copy_right-text{
+  padding: 2.5625rem 0;
+  color: var(--clr-neutral-200);
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+
 
 /* --------------------- */
 /* Responsive part start */
@@ -451,7 +513,7 @@ section {
   }
 
   /* change habits style */
-  .change-habits .change-habits-cards {
+  .change-habits-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -484,8 +546,12 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-}
+  /* footer related style */
+  .footer_content{
+    flex-direction: column;
+  }
 
+}
 
 /* Mobile responsive style */
 
@@ -541,6 +607,11 @@ section {
   .trainer_title{
     bottom: 0.3rem;
     left: 0.5rem;
+  }
+
+  /* footer related style */
+  .footer_content, .footer_content--nav{
+    flex-direction: column;
   }
 
 }
